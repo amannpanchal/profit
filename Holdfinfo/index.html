@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontend.css">
+</head>
+
+<body>
+    <div>
+        <div class="navbar">
+            <div class="heading">HODLINFO</div>
+            <div class="rates">
+               <div class = 'btns'> 
+                <select  class = 'btn'  id='select1' onchange="func2()">
+                </select>
+                <select class = 'btn' >
+                    <option>INR</option>
+                </select>
+                <div class = 'btn' >BUY BTC</div>
+               
+               
+               </div>
+                <div class="timing">
+                    <div class="time"> 46</div>
+                    <div class="button"> 
+                        <button><i class="fa-brands fa-telegram"></i> Connect Telegram</button>
+                    </div>
+                    <div class="light">
+                        <div class="slider-container">
+                            <input type="range" min="0" max="100" value="0" class="slider" id="round-slider">
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br />
+        <br />
+        <div class="valuesChange">
+            <div class='select'>
+                <div class = 'section'>
+                    <div class = 'per'>0.91 %</div>
+                    <div class="time1">5 Mins</div>
+                </div>
+                <div class = 'section'>
+                    <div class = 'per'>0.91 %</div>
+                    <div class="time1">1 Hour</div>
+                </div>
+               
+                <div   class = 'pricee'>
+                    <p class="time1">Best Price to Trade</p>
+                    <div class = 'price'>
+                        <span class = 'price'>₹</span> <span  class = 'price' id="at">232332423</span>
+                    </div>
+                    <p class="time1">Average IOST/INR price <br>  including commission</p>
+
+                </div>
+                <div class = 'section'>
+                    <div class = 'per'>0.91 %</div>
+                    <div class="time1">5 Mins</div>
+                </div>
+                <div class = 'section'>
+                    <div class = 'per'>0.91 %</div>
+                    <div class="time1">5 Mins</div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class='bottom' id='bottom'>
+            <div class='platform '>
+                <p>#</p>
+                <p>Name</p>
+                <p>Last Traded Price</p>
+                <p>Buy/Sell Price</p>
+                <p>Difference</p>
+                <p>Savings</p>
+            </div >
+          <div id="bottom2">
+            <div class = 'platform2'>
+
+            </div>
+          </div>
+
+
+        </div>
+      
+          
+        
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src='frontend.js'></script>
+</body>
+
+</html>
